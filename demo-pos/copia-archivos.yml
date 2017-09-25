@@ -1,5 +1,5 @@
 ﻿- name: Copia archivos a servidores
-  hosts: pos
+  hosts: POS
 
   vars_files:
     - group_vars/all
