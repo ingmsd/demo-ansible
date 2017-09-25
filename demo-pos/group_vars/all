@@ -1,5 +1,5 @@
 mensaje: "Archivo dinamico generado por Ansible Tower para el server: {{ ansible_hostname }}"
-version_file: 3
+version_file: 4
 tienda1: 11111
 tienda2: 22222
 var_cc: "{{ tienda1 if inventory_hostname == '192.168.100.11' else tienda2 if inventory_hostname == '192.168.100.12' else '33333' }}"
