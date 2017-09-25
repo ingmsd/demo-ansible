@@ -8,8 +8,8 @@
     - name: Inicia Copia {{ mensaje }}
       template:
          src: files/template.j2
-         dest: /home/test/prueba.txt
-         owner: test
-         group: test
+         dest: /home/msantacruz/prueba.txt
+         owner: msantacruz
+         group: msantacruz
          mode: 0644
          backup: no
