@@ -1,0 +1,15 @@
+﻿- name: Copia archivos a servidores
+  hosts: all
+
+  vars_files:
+    - group_vars/all
+
+  tasks:
+    - name: Inicia Copia {{ mensaje }}
+      template:
+         src: files/template.j2
+         dest: /home/msantacruz/prueba.txt
+         owner: msantacruz
+         group: msantacruz
+         mode: 0644
+         backup: no
