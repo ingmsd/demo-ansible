@@ -1,0 +1,9 @@
+- name: Check httpd service
+  hosts: all
+  tasks:
+    - name: Obtiene estado de httpd
+      service: name=httpd state=status
+      register: estado
+
+    - name: Inicia assert
+      assert: estado.changed == True
