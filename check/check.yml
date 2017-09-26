@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Obtiene estado de httpd
-      command: service status httpd
+      command: systemctl status httpd
       register: estado
 
     - name: Inicia assert
