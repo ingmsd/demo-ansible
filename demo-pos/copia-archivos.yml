@@ -5,11 +5,11 @@
     - group_vars/all
 
   tasks:
-    - name: Inicia Copia {{ mensaje }}
+    - name: Inicia Copia archivo
       template:
          src: files/template.j2
-         dest: /home/msantacruz/prueba.txt
-         owner: msantacruz
-         group: msantacruz
+         dest: /var/www/html/intex.html
+         owner: root
+         group: root
          mode: 0644
          backup: no

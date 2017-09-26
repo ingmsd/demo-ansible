@@ -1,5 +1,33 @@
-[sodimac]
-  mensaje = {{ mensaje }}
-  versions = {{ version_file }}
-  ip = "{{ inventory_hostname }}"
-  centro_costo = {{ var_cc }}
+<html>
+ <head>
+  <title>Demo Ansible</title>
+ </head>
+ <body>
+ </br>
+  <a href=http://{{ ansible_default_ipv4.address }}/index.html>Homepage</a>
+ </br>
+
+
+
+<table style="width:100%">
+  <tr>
+    <th>Mensaje</th>
+    <th>{{ mensaje }}</th> 
+  </tr>
+  <tr>
+    <td>Versión archivo</td>
+    <td>{{ version_file }}</td> 
+  </tr>
+  <tr>
+    <td>IP Server:</td>
+    <td>{{ inventory_hostname }}</td>
+  </tr>
+  <tr>
+    <td>Centro de Costos:</td>
+    <td>{{ var_cc }}</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
