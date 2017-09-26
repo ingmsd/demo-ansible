@@ -1,2 +1,2 @@
 ﻿- name: Chequeo
-  hosts: alla
+  hosts: all
