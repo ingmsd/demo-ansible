@@ -6,4 +6,6 @@
       register: estado
 
     - name: Inicia assert
-      assert: estado.changed == True
+      assert:
+        that: estado.changed == True
+
