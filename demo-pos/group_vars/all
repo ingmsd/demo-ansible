@@ -1,4 +1,4 @@
-mensaje: "Archivo dinamico generado por Ansible Tower para el server: {{ ansible_hostname }}"
+mensaje: "Archivo dinamico generado por Ansible Tower"
 version_file: 5
 tienda1: 11111
 tienda2: 22222

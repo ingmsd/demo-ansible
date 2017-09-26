@@ -2,20 +2,29 @@
  <head>
   <title>Demo Ansible</title>
  </head>
+<style>
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 15px;
+}
+</style>
  <body>
- </br>
-  <a href=http://{{ ansible_default_ipv4.address }}/index.html>Homepage</a>
- </br>
 
 
-
-<table style="width:60%">
+<table>
   <tr>
-    <td>Mensaje</th>
-    <td>{{ mensaje }}</th> 
+    <td>Mensaje:</td>
+    <td>{{ mensaje }}</td> 
   </tr>
   <tr>
-    <td>Versión archivo</td>
+    <td>Servidor:</td>
+    <td>{{ ansible_hostname }}</td>
+  </tr>
+  <tr>
+    <td>Versión archivo:</td>
     <td>{{ version_file }}</td> 
   </tr>
   <tr>
