@@ -8,4 +8,5 @@
     - name: Inicia assert
       assert:
         that: estado.changed == True
+        msg: "Está Arriba"
 
