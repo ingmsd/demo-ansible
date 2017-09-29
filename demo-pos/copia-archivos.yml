@@ -5,10 +5,28 @@
     - group_vars/all
 
   tasks:
-    - name: Inicia Copia archivo
+    - name: Inicia Copia html variable
       template:
          src: files/template.j2
          dest: /var/www/html/index.html
+         owner: root
+         group: root
+         mode: 0644
+         backup: no
+
+    - name: Copia de Logo Red Hat
+      copy:
+         src: files/Logo_RH_RGB_Default.png
+         dest: /var/www/html/Logo_RH_RGB_Default.png
+         owner: root
+         group: root
+         mode: 0644
+         backup: no
+
+    - name: Copia de Logo Sodimac
+      copy:
+         src: files/Logo-sodimac-corona.jpg
+         dest: /var/www/html/Logo-sodimac-corona.jpg
          owner: root
          group: root
          mode: 0644
