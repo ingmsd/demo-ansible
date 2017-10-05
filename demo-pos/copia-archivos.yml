@@ -25,7 +25,7 @@
 
     - name: Copia de Logo Sodimac
       copy:
-         src: files/Logo-sodimac-corona.jpg
+         src: files/Logo-contraloria.jpg
          dest: /var/www/html/Logo-sodimac-corona.jpg
          owner: root
          group: root
